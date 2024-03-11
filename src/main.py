@@ -1,4 +1,5 @@
 import collections
+import os
 from typing import (
     Dict,
     List,
@@ -6,11 +7,19 @@ from typing import (
 )
 
 import matplotlib.pyplot as plt
+from dotenv import (
+    find_dotenv,
+    load_dotenv,
+)
 
 from ant import Ant
 from cell import Cell
 
-with open("/Users/filippobuoncompagni/metaheuristics/src/data.txt", "r") as file:
+load_dotenv(find_dotenv())
+
+
+PATH_TO_DATA = os.environ.get("PATH_TO_DATA")
+with open(PATH_TO_DATA, "r") as file:
     maze = [row.split() for row in file]
 
 
