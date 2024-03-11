@@ -2,6 +2,8 @@
 
 This repository contains an implementation of the Ant Colony Optimization (ACO) algorithm for solving the pathfinding problem. ACO is a metaheuristic optimization algorithm inspired by the foraging behavior of ants. It's commonly used to find approximate solutions to combinatorial optimization problems, such as the traveling salesman problem and the vehicle routing problem.
 
+<img src="solution.png" alt="Example Image" width="300" height="300">
+
 ## Description
 
 The implementation consists of Python scripts that simulate the behavior of ants exploring a maze-like environment to find the shortest path from a starting point (entry) to a goal point (exit). The maze is represented as a grid of cells, where each cell can have obstacles or be empty. Ants navigate through the maze, laying down pheromone trails that influence the paths chosen by subsequent ants.
